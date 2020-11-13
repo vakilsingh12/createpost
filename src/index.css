@@ -1,0 +1,21 @@
+*{
+  margin:0;
+}
+.nav1{
+  width: 100%;
+  line-height: 60px;
+  background-color: #505664;
+  display: flex;
+  justify-content: space-around;
+  opacity:1;
+}
+.active{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  transition:0.5s;
+ box-sizing: border-box;
+}
+.active:hover{
+  font-size: 25px;
+}
