@@ -1,21 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
-  margin:0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
-.nav1{
+.main_div{
+  width: 71%;
+  border: 1px solid black;
+  margin:40px auto;
+  border-radius: 3px;
+}
+.main{
   width: 100%;
-  line-height: 60px;
-  background-color: #505664;
+  background-color: rgba(0, 0, 0,0.9);
   display: flex;
+  margin: 0px auto;
+  line-height: 100px;
   justify-content: space-around;
-  opacity:1;
+  padding: 10px 0px;
 }
-.active{
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  transition:0.5s;
- box-sizing: border-box;
+.main h1{
+  color:#fff;
+  word-spacing: 5px;
+  text-transform: capitalize;
 }
-.active:hover{
+.btn button{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 6px;
+  border: none;
+  outline:none;
+  text-transform: uppercase;
+ cursor: pointer;
+
+}
+.btn button a{
+  font-weight: 900;
+  text-decoration: none;
+}
+.post{
+  width: 99%;
+  border: 1px solid #000;
+  margin: 10px auto;
+}
+.post h1{
+  padding: 5px;
+}
+.post .para{
+  padding: 7px;
+}
+.post .para1{
+  padding: 15px 5px;
+}
+.icon{
+  width: 20%;
+  display: flex;
+  margin: 0 5px;
+  justify-content: space-between;
+}
+.icon a{
   font-size: 25px;
+  color: black;
+}
+
+/* login page */
+
+.login{
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  width: 40%;
+  border-radius: 6px;
+  border: 1px solid #000;
+  padding: 50px 30px;
+  background-color: rgba(0, 0, 0,0.9);
+}
+form h1{
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+form div input{
+ width: 100%;
+ padding: 10px;
+ border: none;
+ outline: none;
+ border-bottom: 1px solid #fff;
+ background: transparent;
+ color: #fff;
+ font-size: 20px;
+ letter-spacing: 1px;
+ margin-bottom: 30px;
+}
+form div{
+  position: relative;
+}
+form div label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
+form div input:focus ~label,
+form div input:valid ~label
+{
+  top: -20px;
+}
+form button{
+  padding: 8px 20px;
+  font-weight: bold;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  font-size: 13px;
+  /* border: none; */
 }
